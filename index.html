@@ -11,8 +11,8 @@
 </head>
 <body class="font-[Inter]">
     <header>
-        <div class="container mx-auto">
-            <div class="flex justify-between items-center bg-[#1090d81a] rounded-lg px-12 py-4">
+        <div class="container px-8 mx-auto">
+            <div class="flex justify-between items-center bg-[#1090d81a] rounded-lg px-12 py-4 mt-11">
                 <div>
                     <h1 class=" text-[45px] text-[#111111cc] font-bold">Interactive</h1>
                     <h3 class="text-3xl tracking-wider text-[#11111199]">Geometry Genius</h3>
@@ -22,7 +22,216 @@
                 </div>
             </div>
         </div>
-        
     </header>
+
+    <main>
+        <div class="container px-8 mx-auto">
+            <section class="my-12">
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
+                        <img class="w-full h-full max-h-48" src="./assets/images/triangle.png" alt="Triangle Image">
+                        <div class="text-[#414141] mt-10">
+                            <h4 class="text-2xl font-bold mb-1">Triangle</h4>
+                            <h5 class="text-base font-normal">Area (A) = 0.5 x b x h</h5>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center gap-2 mt-2">
+                                <p class="text-base text-[#414141] font-normal">
+                                    b = <span>0</span>cm, h = <span>0</span>cm
+                                </p>
+                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="b">
+                            <label for="" class="me-3">
+                                cm
+                            </label>
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="h">
+                            <label for="">
+                                cm
+                            </label>
+                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        </div>
+                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                    </div>
+
+                    <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
+                        <img class="w-full h-full max-h-48" src="./assets/images/rectangle.png" alt="Triangle Image">
+                        <div class="text-[#414141] mt-10">
+                            <h4 class="text-2xl font-bold mb-1">Rectangle</h4>
+                            <h5 class="text-base font-normal">Area (A) = w x l</h5>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center gap-2 mt-2">
+                                <p class="text-base text-[#414141] font-normal">
+                                    w = <span>0</span>cm, l = <span>0</span>cm
+                                </p>
+                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="w">
+                            <label for="" class="me-3">
+                                cm
+                            </label>
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="l">
+                            <label for="">
+                                cm
+                            </label>
+                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        </div>
+                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                    </div>
+
+                    <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
+                        <img class="w-full h-full max-h-48" src="./assets/images/parallelogram.png" alt="Triangle Image">
+                        <div class="text-[#414141] mt-10">
+                            <h4 class="text-2xl font-bold mb-1">Parallelogram</h4>
+                            <h5 class="text-base font-normal">Area (A) = b x h</h5>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center gap-2 mt-2">
+                                <p class="text-base text-[#414141] font-normal">
+                                    b = <span>0</span>cm, h = <span>0</span>cm
+                                </p>
+                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="b">
+                            <label for="" class="me-3">
+                                cm
+                            </label>
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="h">
+                            <label for="">
+                                cm
+                            </label>
+                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        </div>
+                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                    </div>
+
+                    <div class="card text-center border rounded-lg py-11 row-span-2 flex items-center justify-start flex-col">
+                        <h4 class="text-[#111111cc] font-bold text-xl underline">Area Calculation</h4>
+                        <ol class="flex flex-col gap-5 list-decimal mt-7 ps-11 pe-8 w-full h-full">
+                            <li>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
+                                    <p>12cm</p>
+                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
+                                    <p>12cm</p>
+                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
+                                    <p>12cm</p>
+                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
+                                    <p>125.60cm</p>
+                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
+                        <img class="w-full h-full max-h-48" src="./assets/images/rhombus.png" alt="Triangle Image">
+                        <div class="text-[#414141] mt-10">
+                            <h4 class="text-2xl font-bold mb-1">Rhombus</h4>
+                            <h5 class="text-base font-normal">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h5>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center gap-2 mt-2">
+                                <p class="text-base text-[#414141] font-normal">
+                                    d<sub>1</sub> = <span>0</span>cm, d<sub>2</sub> = <span>0</span>cm
+                                </p>
+                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="d1">
+                            <label for="" class="me-3">
+                                cm
+                            </label>
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="d2">
+                            <label for="">
+                                cm
+                            </label>
+                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        </div>
+                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                    </div>
+
+                    <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
+                        <img class="w-full h-full max-h-48" src="./assets/images/pentagon.png" alt="Triangle Image">
+                        <div class="text-[#414141] mt-10">
+                            <h4 class="text-2xl font-bold mb-1">Pentagon</h4>
+                            <h5 class="text-base font-normal">Area (A) = 0.5 x p x b</h5>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center gap-2 mt-2">
+                                <p class="text-base text-[#414141] font-normal">
+                                    p = <span>0</span>cm, b = <span>0</span>cm
+                                </p>
+                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="p">
+                            <label for="" class="me-3">
+                                cm
+                            </label>
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="b">
+                            <label for="">
+                                cm
+                            </label>
+                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        </div>
+                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                    </div>
+
+                    <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
+                        <img class="w-full h-full max-h-48" src="./assets/images/ellipse.png" alt="Triangle Image">
+                        <div class="text-[#414141] mt-10">
+                            <h4 class="text-2xl font-bold mb-1">Ellipse</h4>
+                            <h5 class="text-base font-normal">Area (A) = <span class="text-2xl">&#120645;</span>ab</h5>
+                        </div>
+                        <div class="">
+                            <div class="flex items-center gap-2 mt-2">
+                                <p class="text-base text-[#414141] font-normal">
+                                    a = <span>0</span>cm, b = <span>0</span>cm
+                                </p>
+                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="a">
+                            <label for="" class="me-3">
+                                cm
+                            </label>
+                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="b">
+                            <label for="">
+                                cm
+                            </label>
+                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        </div>
+                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                    </div>     
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
