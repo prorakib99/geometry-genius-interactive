@@ -33,7 +33,16 @@ function setTextById(elementId, setValue){
     getText.innerText = setValue;
 }
 
-// Shortcut function 
+// Random color generate function
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+  } 
+
+// Shortcut function 1
 function geometryFirstSection(elementField1, elementField2, textId1, textId2, editElementId){
 
     const firstInput = getValueById(elementField1);
@@ -360,3 +369,23 @@ document.getElementById('ellipse-check').addEventListener('click', function(){
     checkButton('ellipse-field-a', 'ellipse-field-b', 'ellipse-text-a', 'ellipse-text-b', 'ellipse-text', 'ellipse-form');
 })
 // ellipse End
+
+// Card Background color
+document.getElementById('triangle-color').addEventListener('mouseenter', function(){
+    this.style.backgroundColor = `${randomColor()}`
+});
+document.getElementById('rectangle-color').addEventListener('mouseenter', function(){
+    this.style.backgroundColor = `${randomColor()}`
+});
+document.getElementById('parallelogram-color').addEventListener('mouseenter', function(){
+    this.style.backgroundColor = `${randomColor()}`
+});
+document.getElementById('rhombus-color').addEventListener('mouseenter', function(){
+    this.style.backgroundColor = `${randomColor()}`
+});
+document.getElementById('pentagon-color').addEventListener('mouseenter', function(){
+    this.style.backgroundColor = `${randomColor()}`
+});
+document.getElementById('ellipse-color').addEventListener('mouseenter', function(){
+    this.style.backgroundColor = `${randomColor()}`
+});
