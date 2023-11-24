@@ -112,7 +112,7 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const getFirstValue = getTextValueById('triangle-text-a');
     const getSecondValue = getTextValueById('triangle-text-b');
 
-    const result = (0.5 * getFirstValue * getSecondValue).toFixed(2);
+    const result = (0.5 * getFirstValue * getSecondValue);
 
     geometrySecondSection('triangle', 'triangle-form', result);
 
@@ -195,7 +195,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
 
     const getFirstValue = getTextValueById('rectangle-text-a');
     const getSecondValue = getTextValueById('rectangle-text-b');
-    const result = (getFirstValue * getSecondValue).toFixed(2);
+    const result = (getFirstValue * getSecondValue);
 
     geometrySecondSection('rectangle', 'rectangle-form', result);
 })
@@ -231,7 +231,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
     const getFirstValue = getTextValueById('parallelogram-text-a');
     const getSecondValue = getTextValueById('parallelogram-text-b');
-    const result = (getFirstValue * getSecondValue).toFixed(2);
+    const result = (getFirstValue * getSecondValue);
 
     geometrySecondSection('parallelogram', 'parallelogram-form', result);
 })
@@ -267,7 +267,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
 
     const getFirstValue = getTextValueById('rhombus-text-a');
     const getSecondValue = getTextValueById('rhombus-text-b');
-    const result = (0.5 * getFirstValue * getSecondValue).toFixed(2);
+    const result = (0.5 * getFirstValue * getSecondValue);
 
     geometrySecondSection('rhombus', 'rhombus-form', result);
 })
@@ -303,7 +303,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
 
     const getFirstValue = getTextValueById('pentagon-text-a');
     const getSecondValue = getTextValueById('pentagon-text-b');
-    const result = (0.5 * getFirstValue * getSecondValue).toFixed(2);
+    const result = (0.5 * getFirstValue * getSecondValue);
 
     geometrySecondSection('pentagon', 'pentagon-form', result);
 })
