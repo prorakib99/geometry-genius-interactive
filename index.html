@@ -31,29 +31,31 @@
                     <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
                         <img class="w-full h-full max-h-48" src="./assets/images/triangle.png" alt="Triangle Image">
                         <div class="text-[#414141] mt-10">
-                            <h4 class="text-2xl font-bold mb-1">Triangle</h4>
+                            <h4 id="triangle" class="text-2xl font-bold mb-1">Triangle</h4>
                             <h5 class="text-base font-normal">Area (A) = 0.5 x b x h</h5>
                         </div>
-                        <div class="">
-                            <div class="flex items-center gap-2 mt-2">
+                        <div id="triangle-text" class="hidden">
+                            <div class="flex items-center gap-2 mt-[1.2rem] mb-[2.3rem]">
                                 <p class="text-base text-[#414141] font-normal">
-                                    b = <span>0</span>cm, h = <span>0</span>cm
+                                    b = <span id="triangle-text-b">0</span>cm, h = <span id="triangle-text-h">0</span>cm
                                 </p>
-                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                                <button id="triangle-edit"><img src="./assets/icons/edit.svg" alt=""></button>
                             </div>
                         </div>
-                        <div class="flex gap-2 items-center justify-center mt-5 mb-8">
-                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="b">
-                            <label for="" class="me-3">
-                                cm
-                            </label>
-                            <input id="" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="h">
-                            <label for="">
-                                cm
-                            </label>
-                            <button class="ms-auto me-1"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                        <div id="trianlge-form">
+                            <div class="flex gap-2 items-center justify-between mt-5 mb-8">
+                                <input id="triangle-field-a" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="b">
+                                <label for="triangle-field-a" class="me-3">
+                                    cm
+                                </label>
+                                <input id="triangle-field-b" class="bg-[#F1F1F1] w-3/12 h-7 px-3 py-1 rounded-md placeholder:text-[#414141]" type="text" name="" placeholder="h">
+                                <label for="triangle-field-b">
+                                    cm
+                                </label>
+                                <button id="triangle-check" class="me-1 hidden"><img class="rounded-sm w-6 h-6" src="./assets/icons/check.svg" alt=""></button>
+                            </div>
                         </div>
-                        <button class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
+                        <button id="btn-triangle" class="text-white text-xl bg-[#1090D8] w-full py-2 font-semibold rounded-lg">Calculate</button>
                     </div>
 
                     <div class="card text-center border rounded-lg py-11 flex items-center justify-center flex-col px-6">
@@ -62,12 +64,12 @@
                             <h4 class="text-2xl font-bold mb-1">Rectangle</h4>
                             <h5 class="text-base font-normal">Area (A) = w x l</h5>
                         </div>
-                        <div class="">
-                            <div class="flex items-center gap-2 mt-2">
+                        <div id="rectangle-text" class="hidden">
+                            <div class="flex items-center gap-2 mt-[1.2rem] mb-[2.3rem]">
                                 <p class="text-base text-[#414141] font-normal">
-                                    w = <span>0</span>cm, l = <span>0</span>cm
+                                    b = <span id="rectangle-text-a">0</span>cm, h = <span id="rectangle-text-b">0</span>cm
                                 </p>
-                                <button><img src="./assets/icons/edit.svg" alt=""></button>
+                                <button id="rectangle-edit"><img src="./assets/icons/edit.svg" alt=""></button>
                             </div>
                         </div>
                         <div class="flex gap-2 items-center justify-center mt-5 mb-8">
@@ -114,35 +116,7 @@
 
                     <div class="card text-center border rounded-lg py-11 lg:row-span-2 flex items-center justify-start flex-col">
                         <h4 class="text-[#111111cc] font-bold text-xl underline">Area Calculation</h4>
-                        <ol class="flex flex-col gap-5 list-decimal mt-7 ps-11 pe-8 w-full h-full">
-                            <li>
-                                <div class="flex justify-between flex-wrap gap-4 items-center">
-                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
-                                    <p><span>12</span>cm</p>
-                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex justify-between flex-wrap gap-4 items-center">
-                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
-                                    <p><span>12</span>cm</p>
-                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex justify-between flex-wrap gap-4 items-center">
-                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
-                                    <p><span>12</span>cm</p>
-                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex justify-between flex-wrap gap-4 items-center">
-                                    <p class="text-[#414141] text-base font-normal">Triangle</p>
-                                    <p><span>12</span>cm</p>
-                                    <button class="text-sm text-white bg-[#1090D8] rounded px-3 py-1">Convert to m</button>
-                                </div>
-                            </li>
+                        <ol id="calculation" class="flex flex-col gap-5 list-decimal mt-7 pe-4 ps-8 w-full h-full">
                             
                         </ol>
                     </div>
@@ -233,6 +207,7 @@
                 </div>
             </section>
         </div>
+        <script src="./assets/js/script.js"></script>
     </main>
 </body>
 </html>
